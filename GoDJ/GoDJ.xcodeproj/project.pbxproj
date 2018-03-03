@@ -14,6 +14,11 @@
 		29C30B71204A75A100A6EA7E /* GoDJ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29C30B6F204A75A100A6EA7E /* GoDJ.xcdatamodeld */; };
 		29C30B73204A75A100A6EA7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C30B72204A75A100A6EA7E /* Assets.xcassets */; };
 		29C30B76204A75A200A6EA7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C30B74204A75A200A6EA7E /* LaunchScreen.storyboard */; };
+		29C30B7E204AE6E700A6EA7E /* DJLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C30B7D204AE6E700A6EA7E /* DJLoginVC.swift */; };
+		29C30B80204AE6FB00A6EA7E /* DJRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C30B7F204AE6FB00A6EA7E /* DJRegisterVC.swift */; };
+		29C30B82204AE71900A6EA7E /* SongQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C30B81204AE71900A6EA7E /* SongQueue.swift */; };
+		29C30B84204AE72C00A6EA7E /* RequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C30B83204AE72C00A6EA7E /* RequestVC.swift */; };
+		29C30B86204AE79A00A6EA7E /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C30B85204AE79A00A6EA7E /* SongCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		29C30B72204A75A100A6EA7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29C30B75204A75A200A6EA7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29C30B77204A75A200A6EA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29C30B7D204AE6E700A6EA7E /* DJLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJLoginVC.swift; sourceTree = "<group>"; };
+		29C30B7F204AE6FB00A6EA7E /* DJRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJRegisterVC.swift; sourceTree = "<group>"; };
+		29C30B81204AE71900A6EA7E /* SongQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongQueue.swift; sourceTree = "<group>"; };
+		29C30B83204AE72C00A6EA7E /* RequestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestVC.swift; sourceTree = "<group>"; };
+		29C30B85204AE79A00A6EA7E /* SongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
 		3083808C73271DB5A7B1BF7F /* Pods-GoDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoDJ/Pods-GoDJ.release.xcconfig"; sourceTree = "<group>"; };
 		F4C125A5B8E05C2442436D6E /* Pods-GoDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoDJ/Pods-GoDJ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +84,11 @@
 			children = (
 				29C30B68204A75A100A6EA7E /* AppDelegate.swift */,
 				29C30B6A204A75A100A6EA7E /* ViewController.swift */,
+				29C30B7D204AE6E700A6EA7E /* DJLoginVC.swift */,
+				29C30B7F204AE6FB00A6EA7E /* DJRegisterVC.swift */,
+				29C30B83204AE72C00A6EA7E /* RequestVC.swift */,
+				29C30B85204AE79A00A6EA7E /* SongCell.swift */,
+				29C30B81204AE71900A6EA7E /* SongQueue.swift */,
 				29C30B6C204A75A100A6EA7E /* Main.storyboard */,
 				29C30B72204A75A100A6EA7E /* Assets.xcassets */,
 				29C30B74204A75A200A6EA7E /* LaunchScreen.storyboard */,
@@ -228,8 +243,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C30B86204AE79A00A6EA7E /* SongCell.swift in Sources */,
+				29C30B84204AE72C00A6EA7E /* RequestVC.swift in Sources */,
 				29C30B71204A75A100A6EA7E /* GoDJ.xcdatamodeld in Sources */,
+				29C30B82204AE71900A6EA7E /* SongQueue.swift in Sources */,
 				29C30B6B204A75A100A6EA7E /* ViewController.swift in Sources */,
+				29C30B80204AE6FB00A6EA7E /* DJRegisterVC.swift in Sources */,
+				29C30B7E204AE6E700A6EA7E /* DJLoginVC.swift in Sources */,
 				29C30B69204A75A100A6EA7E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
