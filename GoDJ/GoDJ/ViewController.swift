@@ -14,33 +14,43 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.view.backgroundColor = UIColor.black
         setupView()
     }
-
+//    override func viewDidDisappear(_ animated: Bool) {
+//        
+//    }
+    
     @objc func setupView() {
         let title = UILabel()
         title.text = "Go DJ!"
         title.textColor = UIColor.white
         title.font = title.font.withSize(50)
+        view.addSubview(title)
         
         let logo = UIImageView()
         logo.image = UIImage(named: "djlogo")
+        view.addSubview(logo)
         
         
         let requestBtn = UIButton()
         requestBtn.setTitle("Request A Song", for: .normal)
         requestBtn.backgroundColor = UIColor.darkGray
-        
+        requestBtn.addTarget(self, action: #selector(request), for: .touchUpInside)
+        view.addSubview(requestBtn)
         
         let DJBtn = UIButton()
         DJBtn.setTitle("DJ Login", for: .normal)
         DJBtn.backgroundColor = UIColor.darkGray
         
-        view.addSubview(title)
-        view.addSubview(logo)
-        view.addSubview(requestBtn)
+        let djLogin = UserDefaults.standard.dictionary(forKey: "djLogin")
+        
+        if djLogin != nil {
+            DJBtn.addTarget(self, action: #selector(request), for: .touchUpInside)
+        } else {
+            DJBtn.addTarget(self, action: #selector(login), for: .touchUpInside)
+        }
         view.addSubview(DJBtn)
         
         title.snp.makeConstraints { (make) in
@@ -72,6 +82,16 @@ class ViewController: UIViewController {
         }
         
     }
+    
+
+    @objc func login() {
+        self.navigationController?.pushViewController(DJLoginVC(), animated: true)
+    }
+    
+    @objc func request() {
+        self.navigationController?.pushViewController(SongQueue(), animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
