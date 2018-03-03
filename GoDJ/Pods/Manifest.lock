@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.6.0)
+  - MGSwipeTableCell (1.6.6)
+  - SnapKit (4.0.0)
+  - SwiftyJSON (4.0.0)
+  - TextFieldEffects (1.4.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.6)
+  - MGSwipeTableCell
+  - SnapKit (~> 4.0.0)
+  - SwiftyJSON
+  - TextFieldEffects
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  MGSwipeTableCell: c3bc6e261e7bc06c112909fe3fb8205de286082c
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
+
+PODFILE CHECKSUM: 6454965a5664adf51aade3788c448ef99f82ba19
+
+COCOAPODS: 1.4.0

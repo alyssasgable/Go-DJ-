@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AFA31D91971516A10DE688A /* Pods_GoDJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109AD066FECE71444FAD20CD /* Pods_GoDJ.framework */; };
+		29C30B69204A75A100A6EA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C30B68204A75A100A6EA7E /* AppDelegate.swift */; };
+		29C30B6B204A75A100A6EA7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C30B6A204A75A100A6EA7E /* ViewController.swift */; };
+		29C30B6E204A75A100A6EA7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C30B6C204A75A100A6EA7E /* Main.storyboard */; };
+		29C30B71204A75A100A6EA7E /* GoDJ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29C30B6F204A75A100A6EA7E /* GoDJ.xcdatamodeld */; };
+		29C30B73204A75A100A6EA7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C30B72204A75A100A6EA7E /* Assets.xcassets */; };
+		29C30B76204A75A200A6EA7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C30B74204A75A200A6EA7E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		109AD066FECE71444FAD20CD /* Pods_GoDJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoDJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C30B65204A75A100A6EA7E /* GoDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C30B68204A75A100A6EA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		29C30B6A204A75A100A6EA7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29C30B6D204A75A100A6EA7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		29C30B70204A75A100A6EA7E /* GoDJ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoDJ.xcdatamodel; sourceTree = "<group>"; };
+		29C30B72204A75A100A6EA7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29C30B75204A75A200A6EA7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29C30B77204A75A200A6EA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3083808C73271DB5A7B1BF7F /* Pods-GoDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoDJ/Pods-GoDJ.release.xcconfig"; sourceTree = "<group>"; };
+		F4C125A5B8E05C2442436D6E /* Pods-GoDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoDJ/Pods-GoDJ.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29C30B62204A75A100A6EA7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AFA31D91971516A10DE688A /* Pods_GoDJ.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BBF79FEF5BC3D300B4170A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4C125A5B8E05C2442436D6E /* Pods-GoDJ.debug.xcconfig */,
+				3083808C73271DB5A7B1BF7F /* Pods-GoDJ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		29C30B5C204A75A100A6EA7E = {
+			isa = PBXGroup;
+			children = (
+				29C30B67204A75A100A6EA7E /* GoDJ */,
+				29C30B66204A75A100A6EA7E /* Products */,
+				1BBF79FEF5BC3D300B4170A6 /* Pods */,
+				E54FD1AA7BDDEC1EAB071E7B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		29C30B66204A75A100A6EA7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29C30B65204A75A100A6EA7E /* GoDJ.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29C30B67204A75A100A6EA7E /* GoDJ */ = {
+			isa = PBXGroup;
+			children = (
+				29C30B68204A75A100A6EA7E /* AppDelegate.swift */,
+				29C30B6A204A75A100A6EA7E /* ViewController.swift */,
+				29C30B6C204A75A100A6EA7E /* Main.storyboard */,
+				29C30B72204A75A100A6EA7E /* Assets.xcassets */,
+				29C30B74204A75A200A6EA7E /* LaunchScreen.storyboard */,
+				29C30B77204A75A200A6EA7E /* Info.plist */,
+				29C30B6F204A75A100A6EA7E /* GoDJ.xcdatamodeld */,
+			);
+			path = GoDJ;
+			sourceTree = "<group>";
+		};
+		E54FD1AA7BDDEC1EAB071E7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				109AD066FECE71444FAD20CD /* Pods_GoDJ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29C30B64204A75A100A6EA7E /* GoDJ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29C30B7A204A75A200A6EA7E /* Build configuration list for PBXNativeTarget "GoDJ" */;
+			buildPhases = (
+				5EE8EFC33E7DBB6D3FDCCE55 /* [CP] Check Pods Manifest.lock */,
+				29C30B61204A75A100A6EA7E /* Sources */,
+				29C30B62204A75A100A6EA7E /* Frameworks */,
+				29C30B63204A75A100A6EA7E /* Resources */,
+				B40F31DC816EC64DC1BB362D /* [CP] Embed Pods Frameworks */,
+				29DF23B1E849D0760465FF6F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoDJ;
+			productName = GoDJ;
+			productReference = 29C30B65204A75A100A6EA7E /* GoDJ.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29C30B5D204A75A100A6EA7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = AlyssaGable;
+				TargetAttributes = {
+					29C30B64204A75A100A6EA7E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 29C30B60204A75A100A6EA7E /* Build configuration list for PBXProject "GoDJ" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29C30B5C204A75A100A6EA7E;
+			productRefGroup = 29C30B66204A75A100A6EA7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29C30B64204A75A100A6EA7E /* GoDJ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29C30B63204A75A100A6EA7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C30B76204A75A200A6EA7E /* LaunchScreen.storyboard in Resources */,
+				29C30B73204A75A100A6EA7E /* Assets.xcassets in Resources */,
+				29C30B6E204A75A100A6EA7E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29DF23B1E849D0760465FF6F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoDJ/Pods-GoDJ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EE8EFC33E7DBB6D3FDCCE55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoDJ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B40F31DC816EC64DC1BB362D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoDJ/Pods-GoDJ-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGSwipeTableCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoDJ/Pods-GoDJ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29C30B61204A75A100A6EA7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C30B71204A75A100A6EA7E /* GoDJ.xcdatamodeld in Sources */,
+				29C30B6B204A75A100A6EA7E /* ViewController.swift in Sources */,
+				29C30B69204A75A100A6EA7E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		29C30B6C204A75A100A6EA7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29C30B6D204A75A100A6EA7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		29C30B74204A75A200A6EA7E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29C30B75204A75A200A6EA7E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29C30B78204A75A200A6EA7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		29C30B79204A75A200A6EA7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29C30B7B204A75A200A6EA7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4C125A5B8E05C2442436D6E /* Pods-GoDJ.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LW9G79YZY5;
+				INFOPLIST_FILE = GoDJ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alyssa.GoDJ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29C30B7C204A75A200A6EA7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3083808C73271DB5A7B1BF7F /* Pods-GoDJ.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LW9G79YZY5;
+				INFOPLIST_FILE = GoDJ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alyssa.GoDJ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29C30B60204A75A100A6EA7E /* Build configuration list for PBXProject "GoDJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29C30B78204A75A200A6EA7E /* Debug */,
+				29C30B79204A75A200A6EA7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29C30B7A204A75A200A6EA7E /* Build configuration list for PBXNativeTarget "GoDJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29C30B7B204A75A200A6EA7E /* Debug */,
+				29C30B7C204A75A200A6EA7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		29C30B6F204A75A100A6EA7E /* GoDJ.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				29C30B70204A75A100A6EA7E /* GoDJ.xcdatamodel */,
+			);
+			currentVersion = 29C30B70204A75A100A6EA7E /* GoDJ.xcdatamodel */;
+			path = GoDJ.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 29C30B5D204A75A100A6EA7E /* Project object */;
+}

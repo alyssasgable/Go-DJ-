@@ -1,0 +1,6 @@
+framework module Pods_GoDJ {
+  umbrella header "Pods-GoDJ-umbrella.h"
+
+  export *
+  module * { export * }
+}
