@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import AWSMobileClient
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,11 +21,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.statusBarStyle = .lightContent
         let viewController = ViewController(nibName: nil, bundle: nil) //ViewController = Name of your controller
         let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.view.backgroundColor = UIColor.black
+        navigationController.navigationBar.backgroundColor = UIColor.black
+//        navigationController.navigationBar.tintColor = UIColor.white
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = navigationController
-        self.window?.makeKeyAndVisible()
-        return true
+//        self.window?.makeKeyAndVisible()
+        
+        return AWSMobileClient.sharedInstance().interceptApplication(
+            application, didFinishLaunchingWithOptions:
+            launchOptions)
+    
+    }
+    
+    func application(_ application: UIApplication, open url: URL,
+                     sourceApplication: String?, annotation: Any) -> Bool {
+        
+        return AWSMobileClient.sharedInstance().interceptApplication(
+            application, open: url,
+            sourceApplication: sourceApplication,
+            annotation: annotation)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

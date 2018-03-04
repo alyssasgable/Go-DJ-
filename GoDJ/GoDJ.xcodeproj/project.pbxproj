@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1AFA31D91971516A10DE688A /* Pods_GoDJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109AD066FECE71444FAD20CD /* Pods_GoDJ.framework */; };
+		29618F45204BC22800CE7BD6 /* nova.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29618F44204BC22800CE7BD6 /* nova.ttf */; };
 		29C30B69204A75A100A6EA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C30B68204A75A100A6EA7E /* AppDelegate.swift */; };
 		29C30B6B204A75A100A6EA7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C30B6A204A75A100A6EA7E /* ViewController.swift */; };
 		29C30B6E204A75A100A6EA7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C30B6C204A75A100A6EA7E /* Main.storyboard */; };
@@ -17,10 +18,14 @@
 		29C30B7E204AE6E700A6EA7E /* DJLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C30B7D204AE6E700A6EA7E /* DJLoginVC.swift */; };
 		29C30B82204AE71900A6EA7E /* SongQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C30B81204AE71900A6EA7E /* SongQueue.swift */; };
 		29C30B86204AE79A00A6EA7E /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C30B85204AE79A00A6EA7E /* SongCell.swift */; };
+		29C30B8A204B04CE00A6EA7E /* UserCheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C30B89204B04CE00A6EA7E /* UserCheckIn.swift */; };
+		29C30B8C204B117D00A6EA7E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C30B8B204B117D00A6EA7E /* MapKit.framework */; };
+		29C30B90204B647B00A6EA7E /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 29C30B8F204B647B00A6EA7E /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		109AD066FECE71444FAD20CD /* Pods_GoDJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoDJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29618F44204BC22800CE7BD6 /* nova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = nova.ttf; sourceTree = "<group>"; };
 		29C30B65204A75A100A6EA7E /* GoDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C30B68204A75A100A6EA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29C30B6A204A75A100A6EA7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +37,9 @@
 		29C30B7D204AE6E700A6EA7E /* DJLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJLoginVC.swift; sourceTree = "<group>"; };
 		29C30B81204AE71900A6EA7E /* SongQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongQueue.swift; sourceTree = "<group>"; };
 		29C30B85204AE79A00A6EA7E /* SongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		29C30B89204B04CE00A6EA7E /* UserCheckIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCheckIn.swift; sourceTree = "<group>"; };
+		29C30B8B204B117D00A6EA7E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		29C30B8F204B647B00A6EA7E /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		3083808C73271DB5A7B1BF7F /* Pods-GoDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoDJ/Pods-GoDJ.release.xcconfig"; sourceTree = "<group>"; };
 		F4C125A5B8E05C2442436D6E /* Pods-GoDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoDJ/Pods-GoDJ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C30B8C204B117D00A6EA7E /* MapKit.framework in Frameworks */,
 				1AFA31D91971516A10DE688A /* Pods_GoDJ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,11 +90,14 @@
 				29C30B68204A75A100A6EA7E /* AppDelegate.swift */,
 				29C30B6A204A75A100A6EA7E /* ViewController.swift */,
 				29C30B7D204AE6E700A6EA7E /* DJLoginVC.swift */,
-				29C30B85204AE79A00A6EA7E /* SongCell.swift */,
+				29C30B89204B04CE00A6EA7E /* UserCheckIn.swift */,
 				29C30B81204AE71900A6EA7E /* SongQueue.swift */,
+				29C30B85204AE79A00A6EA7E /* SongCell.swift */,
 				29C30B6C204A75A100A6EA7E /* Main.storyboard */,
 				29C30B72204A75A100A6EA7E /* Assets.xcassets */,
 				29C30B74204A75A200A6EA7E /* LaunchScreen.storyboard */,
+				29C30B8F204B647B00A6EA7E /* awsconfiguration.json */,
+				29618F44204BC22800CE7BD6 /* nova.ttf */,
 				29C30B77204A75A200A6EA7E /* Info.plist */,
 				29C30B6F204A75A100A6EA7E /* GoDJ.xcdatamodeld */,
 			);
@@ -95,6 +107,7 @@
 		E54FD1AA7BDDEC1EAB071E7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29C30B8B204B117D00A6EA7E /* MapKit.framework */,
 				109AD066FECE71444FAD20CD /* Pods_GoDJ.framework */,
 			);
 			name = Frameworks;
@@ -136,6 +149,11 @@
 					29C30B64204A75A100A6EA7E = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -162,6 +180,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29618F45204BC22800CE7BD6 /* nova.ttf in Resources */,
+				29C30B90204B647B00A6EA7E /* awsconfiguration.json in Resources */,
 				29C30B76204A75A200A6EA7E /* LaunchScreen.storyboard in Resources */,
 				29C30B73204A75A100A6EA7E /* Assets.xcassets in Resources */,
 				29C30B6E204A75A100A6EA7E /* Main.storyboard in Resources */,
@@ -211,6 +231,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GoDJ/Pods-GoDJ-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoAuth/AWSCognitoAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSUserPoolsSignIn/AWSUserPoolsSignIn.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -219,6 +249,16 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSUserPoolsSignIn.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGSwipeTableCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -237,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C30B8A204B04CE00A6EA7E /* UserCheckIn.swift in Sources */,
 				29C30B86204AE79A00A6EA7E /* SongCell.swift in Sources */,
 				29C30B71204A75A100A6EA7E /* GoDJ.xcdatamodeld in Sources */,
 				29C30B82204AE71900A6EA7E /* SongQueue.swift in Sources */,

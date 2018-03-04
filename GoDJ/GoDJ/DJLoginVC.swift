@@ -8,84 +8,91 @@
 
 import UIKit
 import TextFieldEffects
+import AWSAuthCore
+import AWSAuthUI
+import CoreLocation
+import MapKit
+import Alamofire
+import SwiftyJSON
 
 class DJLoginVC: UIViewController {
 
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.hidesBackButton = true
-        
+        view.backgroundColor = UIColor.black
+//        self.navigationController?.navigationBar.backgroundColor = UIColor.black
+//        self.navigationController?.navigationBar.tintColor = UIColor.white
         // Do any additional setup after loading the view.
+//        locationManager.delegate = self as! CLLocationManagerDelegate
         setupView()
+        
+}
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-    }
+    var address = JiroTextField()
     
     @objc func setupView() {
         let logo = UIImageView()
         logo.image = UIImage(named: "djlogo")
         view.addSubview(logo)
         
-        let username = JiroTextField()
-        username.borderColor = UIColor.white
-        username.placeholder = "Username"
-        username.placeholderColor = UIColor.white
-        addDoneButtonOnKeyboard(textfield: username)
-        view.addSubview(username)
+//        let address = JiroTextField()
+        address.borderColor = UIColor.white
+        address.placeholder = "Enter Address"
+        address.placeholderFontScale = 2
+        address.placeholderColor = UIColor.white
+        addDoneButtonOnKeyboard(textfield: address)
+        view.addSubview(address)
         
-        let password = JiroTextField()
-        password.borderColor = UIColor.white
-        password.placeholder = "Password"
-        password.placeholderColor = UIColor.white
-        addDoneButtonOnKeyboard(textfield: password)
-        view.addSubview(password)
         
-        let loginBtn = UIButton()
-        loginBtn.setTitle("Login", for: .normal)
-        loginBtn.backgroundColor = UIColor.darkGray
-        loginBtn.addTarget(self, action: #selector(login), for: .touchUpInside)
-        view.addSubview(loginBtn)
+        let checkInBtn = UIButton()
+        checkInBtn.setTitle("Check In", for: .normal)
+        checkInBtn.backgroundColor = UIColor.darkGray
+        checkInBtn.addTarget(self, action: #selector(checkedIn), for: .touchUpInside)
+        view.addSubview(checkInBtn)
         
         logo.snp.makeConstraints { (make) in
             make.left.equalToSuperview().offset(100)
             make.width.equalTo(200)
             make.height.equalTo(250)
-            make.top.equalToSuperview()
+            make.top.equalToSuperview().offset(50)
         }
-    
-        username.snp.makeConstraints { (make) in
-            make.left.equalToSuperview().offset(20)
-            make.width.equalToSuperview().multipliedBy(0.9)
-            make.height.equalTo(50)
-            make.top.equalTo(logo.snp.bottom).offset(15)
-        }
-        
-        password.snp.makeConstraints { (make) in
-            make.left.equalToSuperview().offset(20)
-            make.width.equalToSuperview().multipliedBy(0.9)
-            make.height.equalTo(50)
-            make.top.equalTo(username.snp.bottom).offset(15)
-        }
-        
-        loginBtn.snp.makeConstraints { (make) in
+
+        checkInBtn.snp.makeConstraints { (make) in
             make.left.right.equalToSuperview().inset(10)
-            make.top.equalTo(password.snp.bottom).offset(75)
+            make.top.equalTo(logo.snp.bottom).offset(75)
             make.height.equalTo(50)
         }
     }
     
-    @objc func login() {
+    @objc func checkedIn() {
+        //enter address into db
+        let lat = (locationManager.location?.coordinate.latitude)!
+        let long = (locationManager.location?.coordinate.longitude)!
         
-        //authentification stuff
+        let url = URL(string: "https://5wt88x02a2.execute-api.us-east-2.amazonaws.com/prod/addSong/Zach/\(lat),\(long)")
+        Alamofire.request(url!, method: .get).validate().responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value).dictionaryValue
+                print("JSON: \(json)")
+            case .failure(let error):
+                print(error)
+            }
+        }
         
-        self.navigationController?.pushViewController(SongQueue(), animated: true)
+        let sq = SongQueue(dj: "Zach")
+        sq.canDelete = true
+        self.navigationController?.pushViewController(sq, animated: true)
         
     }
   

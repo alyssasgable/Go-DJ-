@@ -1,5 +1,26 @@
 PODS:
   - Alamofire (4.6.0)
+  - AWSAuthCore (2.6.12):
+    - AWSCore (= 2.6.12)
+  - AWSAuthUI (2.6.12):
+    - AWSAuthCore (= 2.6.12)
+    - AWSCore (= 2.6.12)
+  - AWSCognito (2.6.12):
+    - AWSCore (= 2.6.12)
+  - AWSCognitoAuth (2.6.12):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+  - AWSCognitoIdentityProvider (2.6.12):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.6.12)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.6.12)
+  - AWSDynamoDB (2.6.12):
+    - AWSCore (= 2.6.12)
+  - AWSMobileClient (2.6.12):
+    - AWSAuthCore (= 2.6.12)
+  - AWSUserPoolsSignIn (2.6.12):
+    - AWSAuthCore (= 2.6.12)
+    - AWSCognitoIdentityProvider (= 2.6.12)
   - MGSwipeTableCell (1.6.6)
   - SnapKit (4.0.0)
   - SwiftyJSON (4.0.0)
@@ -7,6 +28,14 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.6)
+  - AWSAuthUI (~> 2.6.6)
+  - AWSCognito
+  - AWSCognitoAuth
+  - AWSCognitoIdentityProvider
+  - AWSCognitoIdentityProviderASF
+  - AWSDynamoDB
+  - AWSMobileClient (~> 2.6.6)
+  - AWSUserPoolsSignIn (~> 2.6.6)
   - MGSwipeTableCell
   - SnapKit (~> 4.0.0)
   - SwiftyJSON
@@ -14,11 +43,21 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AWSAuthCore: 55376d5a47c2b5cefdd3f78d247e0a5496fc25c4
+  AWSAuthUI: a6f9a2ca9dbee5908f9ef188d062e56bf30de2fb
+  AWSCognito: c69d91501b460c8abe22e224a0d5c3277486a21b
+  AWSCognitoAuth: 4e5874323836782cba292364e88e0909b78087ae
+  AWSCognitoIdentityProvider: 2b7f74c4d6b63c9e5a3ba55db7453e997afa0566
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: d0d6e4f6831754aaf98058d2306a016ae71510fe
+  AWSDynamoDB: a1626a8e025a12fa71723da8eee0c1ff51da5dc0
+  AWSMobileClient: 5972fea7b8b7a9eae8790386700b8a7f330f8ee3
+  AWSUserPoolsSignIn: a731c43b295ac7d4cf9647c655ce580b3ced9397
   MGSwipeTableCell: c3bc6e261e7bc06c112909fe3fb8205de286082c
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
 
-PODFILE CHECKSUM: 6454965a5664adf51aade3788c448ef99f82ba19
+PODFILE CHECKSUM: 696eddfa792b46a2490f8ed54f940a4d3ee04592
 
 COCOAPODS: 1.4.0
